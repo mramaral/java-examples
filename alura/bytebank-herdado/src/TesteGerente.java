@@ -11,6 +11,7 @@ public class TesteGerente {
 		System.out.println("Nome: " + g1.getNome());
 		System.out.println("CPF: " + g1.getCPF());
 		System.out.println("Salario: " + g1.getSalario());
+		System.out.println("Bonificação: " + g1.getBonificacao());
 		
 		g1.setSenha(4242);
 		System.out.println("Autenticação: " + g1.autentica(4222));
