@@ -7,6 +7,19 @@ public class Conta {
 	private int numero;
 	private Cliente titular;
 	
+	public Conta(int agencia, int numero) {
+		System.out.println("Criando uma conta");
+		this.agencia = agencia;
+		System.out.print(".");
+		this.numero = numero;
+		System.out.print(".");
+		this.saldo = 100; //toda conta comeca com 100 reais
+		System.out.print(".");
+		this.limite = 0; //toda conta comeca com limite 0
+		System.out.print(".");
+		System.out.println("Conta Criada!");
+	}
+	
 	public double getSaldo() {
 		return this.saldo;
 	}
