@@ -2,9 +2,9 @@ package bytebank;
 
 public class TestaMetodos {
 	public static void main(String[] args) {
-		Conta teste1 = new Conta();
-		Conta teste2 = new Conta();
-		Conta teste3 = new Conta();
+		Conta teste1 = new Conta(3249, 10177);
+		Conta teste2 = new Conta(3249, 10178);
+		Conta teste3 = new Conta(3249, 10179);
 		
 		teste1.deposita(300.0);
 		teste2.deposita(500);
