@@ -16,9 +16,9 @@ public class TestaMetodos {
 		teste3.transfere(1000, teste2);
 		teste2.transfere(400, teste1);
 		
-		System.out.println("Saldo da Primeira Conta: " + teste1.saldo);
-		System.out.println("Saldo da Segunda Conta: " + teste2.saldo);
-		System.out.println("Saldo da Terceira Conta: " + teste3.saldo);
+		System.out.println("Saldo da Primeira Conta: " + teste1.getSaldo());
+		System.out.println("Saldo da Segunda Conta: " + teste2.getSaldo());
+		System.out.println("Saldo da Terceira Conta: " + teste3.getSaldo());
 	}
 
 }
