@@ -49,23 +49,17 @@ public abstract class Conta {
 	
 	public abstract void deposita(double valor);
 	
-	public boolean saca(double valor) {
+	public void saca(double valor) throws SaldoInsuficienteException{
 		if((this.saldo + this.limite) >= valor) {
 			this.saldo -= valor;
-			return true;
 		}else {
-			return false;
+			throw new SaldoInsuficienteException("Saldo: " + this.saldo + ", Valor: " + valor);
 		}
 	}
 	
-	public boolean transfere(double valor, Conta destino) {
-		if(this.saldo >= valor) {
-			this.saca(valor);
-			destino.deposita(valor);
-			return true;
-		}else {
-			return false;
-		}
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException{
+		this.saca(valor);
+		destino.deposita(valor);
 	}
 
 }

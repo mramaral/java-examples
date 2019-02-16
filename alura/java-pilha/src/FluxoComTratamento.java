@@ -57,8 +57,8 @@ public class FluxoComTratamento {
 		System.out.println("Ini do metodo2");
 		for(int i=1; i<=5; i++) {
 			System.out.println(i);
-			Conta c = null;
-			c.deposita();
+			//Conta c = null;
+			//c.deposita();
 		}
 		System.out.println("Fim do metodo2");
 	}
