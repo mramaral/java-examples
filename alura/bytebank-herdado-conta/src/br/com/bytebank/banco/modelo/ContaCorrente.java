@@ -6,6 +6,11 @@ public class ContaCorrente extends Conta implements Tributavel{
 	}
 	
 	@Override
+	public String toString() {
+		return "ContaPoupanca: " + super.toString();
+	}
+	
+	@Override
 	public void deposita(double valor) {
 		super.saldo += valor;
 	}

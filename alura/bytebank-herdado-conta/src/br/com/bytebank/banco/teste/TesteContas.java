@@ -5,9 +5,11 @@ public class TesteContas {
 
 	public static void main(String[] args) throws SaldoInsuficienteException {
 		ContaCorrente cc = new ContaCorrente(123, 321);
+		System.out.println(cc);
 		cc.deposita(300);
 		
 		ContaPoupanca cp = new ContaPoupanca(248, 163);
+		System.out.println(cp);
 		cp.deposita(300.0);
 		
 		try {
