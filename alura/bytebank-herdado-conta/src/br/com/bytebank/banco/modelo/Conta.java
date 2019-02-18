@@ -1,3 +1,8 @@
+/**
+ * Classe que representa uma conta no ByteBank
+ * @author Matheus Rodrigues do Amaral
+ * @version 0.5
+ */
 package br.com.bytebank.banco.modelo;
 
 public abstract class Conta {
@@ -7,6 +12,11 @@ public abstract class Conta {
 	private int numero;
 	private Cliente titular;
 	
+	/**
+	 * Construtor para inicializar o objeto Conta a partir da agencia e numero
+	 * @param agencia
+	 * @param numero
+	 */
 	protected Conta(int agencia, int numero) {
 		//System.out.println("Criando uma conta");
 		this.agencia = agencia;
@@ -50,6 +60,11 @@ public abstract class Conta {
 	
 	public abstract void deposita(double valor);
 	
+	/**
+	 * Valor precisa ser menor ou igual ao saldo
+	 * @param valor
+	 * @throws SaldoInsuficienteException
+	 */
 	public void saca(double valor) throws SaldoInsuficienteException{
 		if((this.saldo + this.limite) >= valor) {
 			this.saldo -= valor;
