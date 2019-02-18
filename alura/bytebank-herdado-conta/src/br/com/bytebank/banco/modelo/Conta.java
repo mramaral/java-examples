@@ -7,7 +7,7 @@ public abstract class Conta {
 	private int numero;
 	private Cliente titular;
 	
-	public Conta(int agencia, int numero) {
+	protected Conta(int agencia, int numero) {
 		//System.out.println("Criando uma conta");
 		this.agencia = agencia;
 		//System.out.print(".");
