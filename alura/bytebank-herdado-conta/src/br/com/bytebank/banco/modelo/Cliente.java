@@ -10,6 +10,14 @@ public class Cliente {
 	String cpf;
 	String profissao;
 	
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getNome() {
+		// TODO Auto-generated method stub
+		return this.nome;
+	}
 	
 
 }
